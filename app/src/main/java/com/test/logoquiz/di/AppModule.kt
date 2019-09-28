@@ -31,7 +31,7 @@ abstract class AppModule {
         @JvmStatic
         @Named("score_factor")
         @Provides
-        fun provideScoreCaclculationFactor(): Long = 3
+        fun provideScoreCaclculationFactor(): Int = 3
 
     }
 }
