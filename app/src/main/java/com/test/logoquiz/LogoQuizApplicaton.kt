@@ -27,6 +27,7 @@ class LogoQuizApplicaton: DaggerApplication() {
     override fun applicationInjector(): AndroidInjector<out DaggerApplication> =
         DaggerAppComponent
             .builder()
+            .application(this)
             .build()
 
     private fun initLoggingAndCrashReporting() {
